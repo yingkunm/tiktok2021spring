@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列绝对定位</title>
+<style type="text/css">
+body  {
+	font: 100% 宋体, 新宋体;
+	background: #666666;
+	margin: 0; 
+	padding: 0;
+	text-align: center;
+	color: #000000;
+}
+.thrColAbs #container { 
+	position: relative;
+	width: 780px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	border: 1px solid #000000;
+	text-align: left;
+} 
+.thrColAbs .sidebar{
+    position: absolute;
+	top: 0;
+	width: 150px;
+	background: #9ae27e; 
+	padding: 20px;
+}
+.thrColAbs #sidebar1 {
+	left: 0;
+}
+.thrColAbs #sidebar2 {
+	right: 0;
+}
+.thrColAbs #mainContent { 
+	margin: 0 190px;
+	padding: 20px; 
+}
+
+</style>
+<!--[if IE 5]>
+<style type="text/css"> 
+.thrColAbs #sidebar1 { width: 180px; }
+.thrColAbs #sidebar2 { width: 190px; }
+</style>
+<![endif]-->
+</head>
+
+<body class="thrColAbs">
+    <div id="container">
+        <div id="mainContent">
+            <h1> 主要内容 </h1>
+            <p>列绝对定位，不占据空间，是相对于已经定位并且包含关系最近的祖先元素，如果没有，则相对于整个网页 列绝对定位，不占据空间，是相对于已经定位并且包含关系最近的祖先元素，如果没有，则相对于整个网页 列绝对定位，不占据空间，是相对于已经定位并且包含关系最近的祖先元素，如果没有，则相对于整个网页列绝对定位，不占据空间，是相对于已经定位并且包含关系最近的祖先元素，如果没有，则相对于整个网页列绝对定位，不占据空间，是相对于已经定位并且包含关系最近的祖先元素，如果没有，则相对于整个网页列绝对定位，不占据空间，是相对于已经定位并且包含关系最近的祖先元素，如果没有，则相对于整个网页</p>
+            <h2>H2 级别的标题 </h2>
+            <p>列绝对定位，不占据空间，是相对于已经定位并且包含关系最近的祖先元素，如果没有，则相对于整个网页</p>
+        </div>
+        <div id="sidebar1" class="sidebar">
+            <h2>left-absolute-position</h2>
+            <p>此 div 上所显示的背景色刚好与内容等宽。如果您喜欢改用分界线，而且 #mainContent div 将始终包含较多的内容，请在 #mainContent div 的左边缘放置一个边框。 </p>
+            <p>Donec eu mi sed turpis feugiat feugiat. Integer turpis arcu, pellentesque  eget, cursus et, fermentum ut, sapien. </p>
+        </div>
+        <div id="sidebar2" class="sidebar">
+            <h2>right-absolute-position</h2>
+            <p>此 div 上所显示的背景色刚好与内容等宽。如果您喜欢改用分界线，而且 #mainContent div 将始终包含较多的内容，请在 #mainContent div 的右边缘放置一个边框。 </p>
+            <p>Donec eu mi sed turpis feugiat feugiat. Integer turpis arcu, pellentesque  eget, cursus et, fermentum ut, sapien. </p>
+        </div>
+    </div>
+</body>
+</html>

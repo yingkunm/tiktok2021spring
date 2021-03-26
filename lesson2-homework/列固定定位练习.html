@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列固定定位</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% 黑体;
+	background: #666666;
+	margin: 0; 
+	padding: 0;
+	text-align: center;
+	color: #000000;
+}
+.thrColFix #container { 
+	width: 780px; 
+	background: #FFFFFF;
+	margin: 0 auto;
+	border: 1px solid #000000;
+	text-align: left;
+} 
+.thrColFix #sidebar1 {
+    width: 150px; 
+	background: #94d15b; 
+	padding: 15px 10px 15px 20px; 
+}
+.thrColFix #sidebar2 {
+	width: 150px; 
+	background: #EBEBEB; 
+	padding: 15px 10px 15px 20px; 
+}
+.thrColFix #mainContent { 
+	margin: 0 200px; 
+	padding: 0 10px; 
+	border-left: 2px dashed #94d15b;
+	border-right: 2px dashed #000;
+}
+.fltrt { 
+	float: right;
+	margin-left: 8px;
+    border-right: 5px dashed #000000;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+    border-left: 5px dashed #000000;
+}
+.clearfloat { 
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style>
+
+<!--[if IE 5]>
+<style type="text/css"> 
+.thrColFix #sidebar1 { width: 180px; }
+.thrColFix #sidebar2 { width: 190px; }
+</style>
+<![endif]-->
+
+<!--[if IE]>
+<style type="text/css"> 
+.thrColFix #sidebar2, .thrColFix #sidebar1 { padding-top: 30px; }
+.thrColFix #mainContent { zoom: 1; }
+</style>
+<![endif]-->
+</head>
+
+<body class="thrColFix">
+	<div id="container">
+		<div id="sidebar1" class="fltlft">
+			<h3>float-left </h3>
+			<p>此 div 上所显示的背景色刚好与内容等宽。改用分界线 #mainContent div 将始终包含较多的内容，在 #mainContent div 的左边缘放置一个边框。 </p>
+  		</div>
+		<div id="sidebar2" class="fltrt">
+			<h3>float-right </h3>
+			<p>此 div 上所显示的背景色刚好与内容等宽。改用分界线 #mainContent div 将始终包含较多的内容，在 #mainContent div 的左边缘放置一个边框。</p>
+  		</div>
+  		<div id="mainContent">
+			<h1> 主要内容 </h1>
+			<p>固定定位 相对于浏览器窗口固定，不会随滚条滚动，常用小广告，底部选择栏 相对于浏览器窗口固定，不会随滚条滚动，常用小广告，底部选择栏相对于浏览器窗口固定，不会随滚条滚动，常用小广告，底部选择栏相对于浏览器窗口固定，不会随滚条滚动，常用小广告，底部选择栏相对于浏览器窗口固定，不会随滚条滚动，常用小广告，底部选择栏相对于浏览器窗口固定，不会随滚条滚动，常用小广告，底部选择栏</p>
+			<h2>H2 级别的标题 </h2>
+			<p>固定定位 相对于浏览器窗口固定，不会随滚条滚动，常用小广告，底部选择栏</p>
+		</div>
+	<br class="clearfloat" /><!-- 这个用于清除浮动的元素应当紧跟 #mainContent div 之后，以便强制 #container div 包含所有的子浮动 -->
+	</div>
+</body>
+</html>
