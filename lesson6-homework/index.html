@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KK MUSIC PLAYER</title>
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1171911_9hv8npdt608.css">
+</head>
+<body>
+    <div id="music">
+        <div id="player">
+            <div class="music-img">
+                <img src="img/2.gif" id="music-img"/>
+            </div>
+            <div class="tag">
+                <strong>歌曲名</strong>
+                <span class="artist">歌手</span>
+                <span class="album">专辑</span>
+            </div>
+            <div class="control">   
+                <div class="control_above">
+                    <div class="player-component">
+                        <i class="icon iconfont icon-zshangyishou" id="prev"></i>
+                        <i class="icon iconfont icon-play" id="suspend"></i>
+                        <i class="icon iconfont icon-zxiayishou" id="next"></i>  
+                    </div>
+                    <div class="voice">
+                        <i class="icon iconfont icon-shengyin" id="isVoice"></i>
+                        <div class="slider" id="voiceSlider">
+                            <div class="loaded" id="voiceLoaded"></div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="control_below">
+                    <div class="slider" id="musicSlider">
+                        <div class="loaded" id="musicLoaded"></div>
+                    </div>
+                    <span id="time">00:00</span>
+                    <i class="icon iconfont icon-shunxubofang" id="playMode"></i>
+                </div>
+            </div>  
+        </div>
+
+        <label id="menu" for="drop">音乐列表</label>
+        <input type="checkbox" id="drop">
+        <ul id="playlist">
+            
+        </ul>
+        
+
+        <audio id="audio"></audio>
+    </div>
+        
+</body>
+<script type="text/javascript" src="js/music.js"></script>
+</html>
