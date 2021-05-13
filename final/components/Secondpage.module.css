@@ -1,0 +1,131 @@
+.container{
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 180px;
+
+}
+  
+.topbar{
+    background-color: #fff;
+    height: 30px;
+    position: relative;
+    z-index: 99;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 35px;
+    height: 35px;
+    
+    margin-left: 10px;
+    
+    border: .02rem solid #eee;
+    border-radius: .14rem;
+    float: left;
+}
+.slogan{
+    font-size: 15px;
+    color: #222;
+    line-height: 30px;
+    float:left;
+    margin-left: 4px;
+
+}
+.open{
+    float: right;
+    height: 28px;
+    margin-top: 5px;
+    margin-right: 8px;
+    overflow: hidden;
+}
+.wrapper{
+    background-color: #fff;
+}
+.art_header{
+   
+    position: relative;
+    
+    margin: 3px;
+    
+}
+.art_header h1{
+    line-height: 33px;
+    font-weight: 700;
+    color: #222;
+    font-size: 25px;
+    margin: 0px;
+}
+.author{
+    display: flex;
+    align-items: center;
+    height: 50px;
+   margin-top: 18px;
+}
+.media_pic{
+    width: 2.2rem;
+    height: 2.2rem;
+    position: relative;
+    border-radius: 16px;
+    float: left;
+    margin-right: 10px;
+}
+.author_information{
+    float: left;
+    height: 40px;
+}
+.author_name{
+    font-size: 15px;
+    line-height: 18px;
+    color: #222;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.details{
+    margin-top: 5px;
+    font-size: .24rem;
+    line-height: 20px;
+    color: #999;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.subscribe{
+    margin-left: auto;
+    margin-right: 18px;
+    padding: .08rem .26rem;
+    color: #222;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color:#eee;
+    border-width: 0.1px;
+}
+.art_container{
+    
+}
+.words{
+    margin: 0 10px;
+    padding: 0;
+}
+.words p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 29px;
+}
+.word strong{
+    font-weight: 400!important;
+    -webkit-text-stroke-width: .5px!important;
+}
+.back{
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 3px;
+    background: #f04142;
+}
